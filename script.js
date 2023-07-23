@@ -68,11 +68,15 @@ const errorCallback = (error) => {
 navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 
 const show_weather = (response) => {
+  console.log(response)
   if (response.weather[0].main === 'Haze') {
     showimgel.src = './images/haze.gif'
   }
   else if (response.weather[0].main === 'Mist') {
     showimgel.src = './images/mist.gif'
+  }
+  else if (response.weather[0].main === 'Clear') {
+    showimgel.src = './images/clear.gif'
   }
   else if (response.weather[0].main === 'Clouds') {
     showimgel.src = './images/clouds.gif'
