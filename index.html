@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    
+<div class="loading">
+    <img src="./images/WeatherIcons.gif" class="loading_img">
+    <div class="loading_info"><h3>Detecting Location</h3>
+    <h5>Your Current location will be displayed on the app & used for calculating real time weather</h5></div>
+    
+</div>
+
+
+<div class="show">
+<div class="show-weather">
+    <div id="city">
+      
+    </div>
+    <div class="time_temp">
+        <div class="time_date">
+          <div id="time"></div>
+         <div id="date"></div> 
+        </div>
+        <div class="temp">
+         
+        </div>
+    </div>
+</div>
+<div class="search-weather">
+<div class="condition">
+<img class="show_img">
+</div>
+<hr>
+<div class="search_box">
+    <input type="text"  id="search" placeholder="Search any city" onchange="return search_weather(event)">
+    <i class="fa-solid fa-magnifying-glass "></i>
+<div class="search_info"> <h4></h4>
+    <img class="icon"></div>    
+   
+</div>
+
+<div class="info_box">
+    <hr>
+<div class="temperature info">Temperature <span class="result"></span></div>
+<hr>
+<div class="humidity info">Humidity <span class="result"></span></div>
+<hr>
+<div class="max_min info">Max & Min <span class="result"></span></div>
+<hr>
+<div class="wind_speed info">Wind Speed <span class="result"></span></div>
+</div>
+</div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/b20fe84233.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

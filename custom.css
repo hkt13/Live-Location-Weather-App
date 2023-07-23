@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+    background: url(./images/b3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* background-color: rgba(0,0,0,0.15); */
+}
+
+/* body::before{
+    content: 'Some';
+    position: absolute;
+    height: 100vh;
+  
+    width: 100vw;
+    top: 0;
+} */
+
+.loading{
+    display: flex;
+    width: 50%;
+    background: rgba(0,0,0,0.4);
+    flex-direction: column;
+    align-items: center;
+}
+
+.loading_img{
+    height: 300px;
+    width: 300px;
+}
+.loading_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loading h3,h5{
+    color: white;
+  
+}
+
+.loading h5{
+    width: 57%;
+    margin-top: 15px;
+    text-align: center;
+}
+.show{
+    display: none;
+    justify-content: center;
+}
+
+.show-weather{
+
+    background: url(./images/s2.jpg);
+    height: 500px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#city{
+
+    font-size: 30px;
+    text-align: end;
+    color: white;
+    margin: 20px;
+    font-family: cursive;
+}
+
+.time_temp{
+
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    justify-content: space-around;
+}
+
+.time_date{
+    font-size: 25px;
+    font-family: cursive;
+}
+#date{
+    font-size: 15px;
+}
+
+.temp{
+    margin-left: 20px;
+    font-size: 41px;
+    position: relative;
+    font-family: fantasy; 
+}
+
+.temp div{
+    font-size: 29px;
+    display: inline;
+    position: absolute;
+    bottom: 2px;
+}
+
+.search-weather{ 
+    background: rgba(0,0,0,0.65);
+    height: 500px;
+    width: 300px;
+    color: white;
+    padding: 0.4rem 2rem;
+}
+
+.condition{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show_img{
+    height: 94px;
+}
+
+.search_box{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.search_box input{
+    padding: 5px;
+    background: rgba(0,0,0,0);
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.search_box i:hover{
+    cursor: pointer;
+}
+
+.search_info{
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+h4{
+    margin: 14px 0px 0px 0px;
+}
+
+.icon{
+    height: 60px;
+    margin: 6px 0px 0px 0px;
+}
+
+.info{
+    padding: 0.4rem;
+    position: relative;
+}
+
+.result{
+    position: absolute;
+    right: 4px;
+}
