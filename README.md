@@ -14,5 +14,5 @@
 <p>The Food Delivery Landing Page is built using:</p>
 » HTML5: For structuring the content and layout of the page. <br>
 » CSS3: For styling and creating an appealing user interface. <br>
-» Responsive Design: Ensuring a seamless experience across various devices, from desktops to tablets and smartphones.
+» Responsive Design: To ensure a seamless shopping experience across all devices.
 
